@@ -2,13 +2,27 @@
 <html lang="">
     <head>
         <meta charset="utf-8">
+        <style type="text/css">
+            body, html
+            {
+                margin: 0; padding: 0; height: 100%; overflow: hidden;
+            }
+
+            #content
+            {
+                position:absolute; left: 0; right: 0; bottom: 0; top: 0px; 
+            }
+        </style>        
     </head>
     <body>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-        <iframe src="https://mdn-samples.mozilla.org/snippets/html/iframe-simple-contents.html" width="400" height="300">
-          <p>Your browser does not support iframes.</p>
-        </iframe>
+
+        <div id="content">
+            <iframe width="100%" height="100%" frameborder="0" src="http://cnn.com" />
+                <p>Your browser does not support iframes.</p>
+            </iframe>            
+        </div>        
     </body>
 </html>
